@@ -13,11 +13,11 @@
  *= require_tree .
  *= require_self
  */
- html {
+ /* html {
    margin: 0;
    height: 100%;
    overflow: hidden;
- }
+ } */
  
 body {
   background: url('http://kitty-whisperer.com/wp-content/uploads/2018/08/cat-wallpaper-cute-anime-063.jpg');
@@ -27,3 +27,10 @@ body {
   background-position: 50% 3%;
   background-color: #FEC6C7;
 }
+
+label {
+  font-size: 20pt;
+  font-family: Chalkduster;
+  color: #4A342C;
+}
+

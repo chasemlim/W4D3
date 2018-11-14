@@ -28,6 +28,11 @@ body {
   background-color: #FEC6C7;
 }
 
+img {
+  max-width: 30%
+
+}
+
 label {
   font-size: 20pt;
   font-family: Chalkduster;

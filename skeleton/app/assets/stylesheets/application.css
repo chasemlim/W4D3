@@ -30,7 +30,12 @@ body {
 
 img {
   max-width: 30%
+}
 
+h1 {
+  font-family: 'Varela Round', sans-serif;
+  color: #2b2b2b;
+  text-shadow: 4px 4px 0px rgba(0,0,0,0.1);
 }
 
 label {

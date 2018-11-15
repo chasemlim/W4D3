@@ -6,9 +6,25 @@
 
     <%= stylesheet_link_tag    'application', media: 'all' %>
     <%= javascript_include_tag 'application' %>
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
   </head>
 
   <body>
+    <% if current_user %>
+      <form action="<%=session_url%>" method="post">
+        <input type="hidden" name="_method" value="delete">
+        <input type="submit" name="" value="LOGOUT, BOiiIii">
+      </form>
+    <% else %>
+      <form action="<%= new_session_url %>" method="get">
+        <input type="submit" name="" value="LOGIN PLEASE">
+        
+      </form>
+    <% end %>
+    
+    <% if flash[:logout] %>
+    <div class="logout"><%= flash[:logout] %></div>
+    <% end %>
     <%= yield %>
   </body>
 </html>
